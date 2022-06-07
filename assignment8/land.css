@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-transform: capitalize;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+header{
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.div1{
+    display: flex;
+    justify-content: center;
+}
+.div1 img{
+    margin: 50px;
+}
+.div2{
+    display: flex;
+    justify-content: center;
+}
+main img{
+    height: 150px;
+    width: 150px;
+}
+.plain{
+    border: 15px solid lightseagreen;
+}
+.dashed{
+    border:15px solid lightseagreen;
+    border-style: dashed;
+}
+.square{
+    border: 15px solid lightseagreen;
+    border-style: dotted;
+}
+.double{
+    border: 15px solid lightseagreen;
+    border-left: 10px solid rgb(14, 77, 74);
+    border-top: 10px  solid rgb(14, 77, 74);
+}
+.doublea{
+    border: 15px solid lightseagreen;
+    border-right: 15px solid rgb(14, 77, 74);
+    border-bottom: 15px solid rgb(14, 77, 74);
+    width: fit-content;
+    margin: 50px;
+}
+.double2{
+    border: 15px solid lightseagreen;
+    border-right: 15px solid rgb(14, 77, 74);
+    border-bottom: 15px solid rgb(14, 77, 74);
+}
+.doubleb{
+    border: 15px solid lightseagreen;
+    border-right: 15px solid rgb(14, 77, 74);
+    border-bottom: 15px solid rgb(14, 77, 74);
+    width: fit-content;
+    margin: 50px;
+}
+.plain2{
+    border: 10px solid lightseagreen;
+    margin: 5px;
+}
+.plain2a{
+    border: 10px solid lightseagreen;
+    width: fit-content;
+    margin: 50px;
+}
+.none{
+    margin-left: 45%;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 10px black;
+}
+.content{
+    background-color: lightseagreen;
+    color: white;
+    padding: 20px;
+    height: 200px;
+    border-top: 10px solid green;
+    border-left: 10px solid red;
+    border-bottom: 10px solid blue;
+    border-right: 10px solid magenta;
+    margin-bottom: 20px;
+}
+h3{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px;
+    background-color: lightseagreen;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 30px;
+}

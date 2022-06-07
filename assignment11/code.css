@@ -1,0 +1,422 @@
+header{
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    margin-left: 50px;
+    color: brown;
+}
+a{
+    text-decoration: none;
+
+}
+button{
+   margin: 5px;
+   background-color: solid red;
+   border: none;
+   padding: 10px;
+}
+.buttons{
+    margin-right: 50px;
+    
+    
+}
+#home{
+    /* color: aliceblue; */
+    color: yellowgreen;
+    text-underline-offset: 1px;
+    font-size: 30px;
+    padding: 10px;
+    align-self: center;
+
+}
+.abt{color: red;
+    font-size: 30px;
+    padding: 20px;
+
+}
+
+
+/*==============Section 1 starts============*/
+
+.section1{
+    text-align: center;
+  
+}
+h2{
+    color: aliceblue;
+}
+.box1{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 20px 20px 20px 250px;
+    
+}
+.sidekick1{
+    width:50px;
+    height:50px;
+    border: 2px solid blue;
+    padding: 10px;
+    background-color: rgb(255, 233, 30);
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.sidekick2{
+    width:50px;
+    height:50px;
+    border: 2px solid blue;
+    background-color: rgb(235, 247, 67);
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.hero{
+    width:50px;
+    height:50px;
+    background-color: chartreuse;
+    border: 2px solid rgb(22, 7, 112);
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    /* align-self: center; */
+}
+
+
+/*============box2========*/
+
+
+
+
+.box2{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    border: 2px solid rebeccapurple;
+    margin: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    float: left;
+}
+.sidekick3{
+    width:50px;
+    height:50px;
+    border: 2px solid blue;
+    padding: 10px;
+    display: flex;
+    flex-grow: 6;
+    background-color: pink;
+    margin-top: 70px;
+}
+.sidekick4{
+    width:50px;
+    height:50px;
+    display: flex;
+    flex-grow: 3;
+    border: 2px solid blue;
+    background-color: pink;
+    padding: 10px;
+}
+.hero2{
+    width:30px;
+    height:50px;
+    display: flex;
+    background-color: chartreuse;
+    border: 2px solid rgb(22, 7, 112);
+    padding: 10px;
+    margin-right: 160px;
+    margin-bottom: 50px;
+    
+}
+
+
+/*============box3========*/
+
+.box3{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    border: 2px solid rebeccapurple;
+    margin: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    float: left;
+}
+.sidekick5{
+    width:50px;
+    height:50px;
+    border: 2px solid blue;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 233, 30);
+    margin: 5px;
+}
+.sidekick6{
+    width:50px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    border: 2px solid blue;
+    background-color: rgb(235, 247, 67);
+    padding: 10px;
+    margin: 5px;
+}
+.hero3{
+    width:50px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    background-color: chartreuse;
+    border: 2px solid rgb(22, 7, 112);
+    padding: 10px;
+    margin-left: 158px;
+}
+
+/*==============Section 2 starts============*/
+.section2{
+    clear: left;
+    text-align: center;
+    margin-top: 200px;
+    position: relative;
+}
+.box4{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    border: 2px solid rebeccapurple;
+    margin: 20px 20px 20px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+
+}
+.lamp{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(201, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: chartreuse;
+    padding: 5px; margin: 5px;
+}
+.pen{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(201, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: rgb(186, 159, 211);
+    padding: 5px; margin: 5px;
+}
+.phone{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(201, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: chartreuse;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+
+/*============box5========*/
+
+
+.box5{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    border: 2px solid rebeccapurple;
+    margin: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    position: relative;
+
+}
+.lamp1{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(201, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: chartreuse;
+    padding: 5px; margin: 5px;
+    position: absolute;
+    top: 10px;
+}
+.pen1{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(201, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: rgb(186, 159, 211);
+    padding: 5px; margin: 5px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+}
+.phone1{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(201, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: chartreuse;
+    padding: 5px;
+    margin: 5px;
+  position: absolute;
+  bottom: 10px;
+    
+}
+
+
+/*============box6========*/
+
+
+.box6{
+    background-color: aqua;
+    width: 250px;
+    height: 250px;
+    border: 2px solid rebeccapurple;
+    margin: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    position: relative;
+
+}
+.lamp2{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(201, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: chartreuse;
+    padding: 5px; margin: 5px;
+    position: absolute;
+    top: 10px;
+   
+}
+.pen2{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(201, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: rgb(186, 159, 211);
+    padding: 5px; margin: 5px;
+    position: absolute;
+    bottom: 90px;
+    left: 25px;
+    z-index: 1;
+}
+.phone2{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(201, 0, 0);
+    display: flex;
+    align-items: center;
+    background-color: chartreuse;
+    padding: 5px;
+    margin: 5px;
+  position: absolute;   
+}
+
+/*====================Section 3====================*/
+.flex{
+    clear: left;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(68, 248, 83);
+    justify-content: center;
+    align-items: center;
+    
+}
+.item{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(212, 182, 146);
+    border: 2px solid purple;
+}
+
+/*====================Second flex====================*/
+
+.flex2{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    background-color: rgb(72, 187, 91);
+    flex-wrap: wrap;
+}
+
+.ba{
+    width: 100px;
+    height: 70px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(212, 182, 146);
+    border: 2px solid red;
+} 
+
+
+
+/*====================third flex====================*/
+
+.flex3{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      background-color: rgb(97, 155, 92);
+      flex-wrap: wrap;
+  }
+  .bottle{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(212, 182, 146);
+    border: 2px solid purple;
+}
+
+
+
+
