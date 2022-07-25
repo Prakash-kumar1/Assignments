@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="MyButton"> Tutorial </button>
+    <div style="display: none; background-color: red">
+    <ul>
+        <li>Data1</li>
+        <li>Data2</li>
+        <li>Data3</li>
+        <li>Data4</li>
+    </ul>
+    </div>
+    <script>
+        let button = document.querySelector(".MyButton");
+        let div = document.querySelector("div");
+        button.addEventListener("click" , MyFunction);
+        function MyFunction(){
+            if(div.style.display == "none"){
+                div.style.display = "Block"
+            }else{
+                (div.style.display == "none") ;
+            }
+        }
+    </script>
+</body>
+</html>
