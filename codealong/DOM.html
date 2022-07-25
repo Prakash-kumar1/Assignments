@@ -8,7 +8,8 @@
 </head>
 <body>
     <button class="MyButton"> Tutorial </button>
-    <div style="display: none; background-color: red">
+    <button class="MyButton2"> remove </button>
+    <div style="display: none; background-color: lightcoral">
     <ul>
         <li>Data1</li>
         <li>Data2</li>
@@ -18,14 +19,19 @@
     </div>
     <script>
         let button = document.querySelector(".MyButton");
+        let button2 = document.querySelector(".MyButton2");
         let div = document.querySelector("div");
         button.addEventListener("click" , MyFunction);
+        button2.addEventListener("click" , MyFunction2);
         function MyFunction(){
-            if(div.style.display == "none"){
+            // if(div.style.display == "none"){
                 div.style.display = "Block"
-            }else{
-                (div.style.display == "none") ;
-            }
+            // }else{
+            //     (div.style.display == "none") ;
+            // }
+        }
+        function MyFunction2(){
+            div.style.display = "none" ;
         }
     </script>
 </body>
