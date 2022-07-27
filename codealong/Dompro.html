@@ -7,75 +7,20 @@
     <title>DOM Manipulation</title>
 </head>
 <body>
-   <ul id="element">
-   <li class="list-item"> First Element </li>
-   <li class="list-item"> Second llement </li>
-   <li class="list-item"> third Element </li>
-</ul>
-<table>
-    <tr>
-        <td>one</td>
-        <td>two</td>
-    </tr>
-    <tr>
-        <td>three</td>
-        <td>four</td>
-    </tr>
-    <tr>
-        <td>Five</td>
-        <td>Six</td>
-    </tr>
-</table>
-<script>
+    <a id = "anchorID " href="https://redis.io"> redis</a>
+   <div class="container">
+    <p class="para">Prakash</p>
+    <p class="para">Govind</p>
 
-    // // Root node
-    // console.log(document.documentElement)
-    // console.log(document.body) ;
-    // console.log(document.head) ;
-
-    // // children 
-    // console.log(document.body.childNodes) ;
-    // console.log(document.body.children) ;
-    // console.log(document.body.firstElementChild) ;
-    // console.log(document.body.lastElementChild) ;
-
-    // // Siblings
-    // console.log(document.body.children) ;
-    // const ulTag = document.body.children[0]
-    // console.log(ulTag) ;
-
-
-    // //  Table DOM Manipulation
-    const tableTag = document.body.children[1]
-    console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:blue") ;
-    console.log(tableTag.tBodies[0].rows[1].cells[1].style = "background-color:red") ;
-    console.log(tableTag.tBodies[0].rows[2].cells[0].style = "background-color:yellow") ;
-
-    // //  ID Search
-
-    // console.log(element) ;
-    // element.style.background="green" ;
-
-    // // OR
-
-    // const ulTag = document.getElementById("element")
-    // ulTag.style.backgroundColor = "gold" ;
-
-//     //  Class Search
-
-  ListItem = document.getElementsByClassName("list-item")
-    console.log(ListItem) ;
-    // ListItem.style.backgroundColor = "black" ;(Error)
-
-//     console.log(document.getElementsByTagName("table")) ;
-    
-
-// Query -  Selector
-
-const Bomb = document.querySelector('.list-item')
-console.log(Bomb) ;
-
-
-</script>
+    <p class="para">
+    <span class="spanClass">Span1</span>
+    <span class="spanClass">Span2</span>
+  </p>
+</div>
+<form>
+    <label for="text">Enter name</label>
+    <input type="text" name="textname" id="text" />
+    <button type="submit">submit</button>
+</form>
 </body>
 </html>
