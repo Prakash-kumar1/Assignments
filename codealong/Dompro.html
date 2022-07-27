@@ -7,7 +7,7 @@
     <title>DOM Manipulation</title>
 </head>
 <body>
-   <ul>
+   <ul id="element">
     <li>First Element</li>
    <li>Second Element</li>
    <li>third Element</li>
@@ -47,9 +47,19 @@
 
     // //  Table DOM Manipulation
     const tableTag = document.body.children[1]
-    console.log(tableTag.rows) ;
+    console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color:blue") ;
+    console.log(tableTag.tBodies[0].rows[1].cells[1].style = "background-color:red") ;
+    console.log(tableTag.tBodies[0].rows[2].cells[0].style = "background-color:yellow") ;
 
+    // //  ID Search
 
+    // console.log(element) ;
+    // element.style.background="green" ;
+
+    // // OR
+
+    // const ulTag = document.getElementById("element")
+    // ulTag.style.backgroundColor = "gold" ;
 
 
 </script>
