@@ -8,9 +8,9 @@
 </head>
 <body>
    <ul id="element">
-    <li>First Element</li>
-   <li>Second Element</li>
-   <li>third Element</li>
+   <li class="list-item"> First Element </li>
+   <li class="list-item"> Second llement </li>
+   <li class="list-item"> third Element </li>
 </ul>
 <table>
     <tr>
@@ -60,6 +60,20 @@
 
     // const ulTag = document.getElementById("element")
     // ulTag.style.backgroundColor = "gold" ;
+
+//     //  Class Search
+
+  ListItem = document.getElementsByClassName("list-item")
+    console.log(ListItem) ;
+    // ListItem.style.backgroundColor = "black" ;(Error)
+
+//     console.log(document.getElementsByTagName("table")) ;
+    
+
+// Query -  Selector
+
+const Bomb = document.querySelector('.list-item')
+console.log(Bomb) ;
 
 
 </script>
