@@ -9,16 +9,57 @@
 <body>
   <h1 id="show">We are Learning  Javascript</h1>
   <h2>Subscribe geeky shows</h2>
-  <p id="geek">Hello geeky shows</p>
-  <p id="find">Bye ! Geeky shows</p> 
+  <p id="geek">Hello <span>geeky shows</span><em>world</em><span>Youtube</span></p>
+
+
+  <p id="find">Bye ! Geeky shows <span>Subscribe</span></p> 
+  <div>
+    <p>First Para Inside div</p>
+    <p>second Para Inside div</p>
+  </div>
   <script>
+
+    // Accesing element by ID Name
+
     let result =  document.getElementById("geek")
     document.write(result)
     console.log(result)
 
-     result =  document.getElementById("show")
-    document.write(result)
-    console.log(result)
+     result =  document.getElementById("show") ;
+    document.write(result) ;
+    console.log(result) ;
+
+    // Accesing element by Tag Name
+    let Tags = document.getElementsByTagName("p")
+    document.write(Tags) ;
+    console.log(Tags) ;
+
+    Tags = document.getElementsByTagName("*")
+    document.write(Tags) ;
+    console.log(Tags) ;
+
+    Tags = document.body.getElementsByTagName("*")
+    document.write(Tags) ;
+    console.log(Tags) ;
+
+    // // It will gives  error
+    // Tags = document.body.div.getElementsByTagName("*")
+    // document.write(Tags) ;
+    // console.log(Tags) ;
+
+//   Acessing  Span  tag   specificaly  from  id  =  "geek"
+
+let specificTags = document.getElementById("geek") ;
+let getSpan = specificTags.getElementsByTagName("span") ;
+document.write(getSpan) ;
+    console.log(getSpan) ;
+
+    // OR we can also write this way -  through Merging  both  (in id = "find")
+
+let Specific = document.getElementById("find").getElementsByTagName("span") ;
+document.write(Specific) ;
+    console.log(Specific) ;
+
   </script> 
 </body>
 </html>
