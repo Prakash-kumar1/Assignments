@@ -61,14 +61,23 @@ let Specific = document.getElementById("find").getElementsByTagName("span") ;
 document.write(Specific) ;
     console.log(Specific) ;
 
-    // Finding Length 
+//     // Finding Length 
 
-let data = document.getElementsByTagName("p") ;
-let len = data.length
-document.write(len + "<br>" ) ;
-console.log(len) ;
-document.write(data) ;
-console.log(data) ;
+// let data = document.getElementsByTagName("p") ;
+// let len = data.length
+// document.write(len + "<br>" ) ;
+// console.log(len) ;
+// document.write(data) ;
+// console.log(data) ;
+
+// //  Using  Loop
+
+len = document.getElementsByTagName("p").length ;
+for (let i = 0; i < len; i++) {
+    const element =document.getElementsByTagName("p")[i];
+    document.write(element + "<br>" ) ;
+console.log(element) ;
+}
   </script> 
 </body>
 </html>
