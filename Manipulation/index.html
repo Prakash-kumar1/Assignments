@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document ID</title>
+    <title class="Dragon">Document Tree</title>
 </head>
 <body>
-  <h1 id="show">We are Learning  Javascript</h1>
+  <h1 id="show" class="Dragon myClass">We are Learning  Javascript</h1>
   <h2>Subscribe geeky shows</h2>
   <h3>Right Now</h3>
-  <p id="geek">Hello <span>geeky shows</span><em>world</em><span>Youtube</span></p>
+  <p id="geek" class="Dragon">Hello <span>geeky shows</span><em>world</em><span>Youtube</span></p>
 
 
-  <p id="find">Bye ! Geeky shows <span>Subscribe</span></p> 
-  <div>
+  <p id="find" class="myClass">Bye ! Geeky shows <span>Subscribe</span></p> 
+  <div id="access">
     <p>First Para Inside div</p>
-    <p>second Para Inside div</p>
+    <p class="Dragon">second Para Inside div</p>
+    <p class="myClass">Third paragraph inside div tag</p>
+    <p id="show1">I am 4th paragraph</p>
   </div>
   <script>
 
@@ -78,6 +80,89 @@ for (let i = 0; i < len; i++) {
     document.write(element + "<br>" ) ;
 console.log(element) ;
 }
+
+// Accesing element by Class Name
+
+let res = document.getElementsByClassName("Dragon")
+document.write(res) ;
+console.log(res) ;
+
+// Accesing  Class Name only in body
+
+res = document.body.getElementsByClassName("Dragon")
+document.write(res) ;
+console.log(res) ;
+
+// Accesing  Double Class Name 
+
+res = document.body.getElementsByClassName("Dragon myClass")
+document.write(res) ;
+console.log(res) ;
+
+// Accessing  class name
+res = document.body.getElementsByClassName("myClass")
+document.write(res) ;
+console.log(res) ;
+
+// Accessing  class name through div
+
+res = document.getElementById("access").getElementsByClassName("Dragon") ;
+document.write(res) ;
+console.log(res) ;
+
+res = document.getElementById("access").getElementsByClassName("myClass") ;
+document.write(res) ;
+console.log(res) ;
+
+
+// // Finding Length in Class name("similarly ID Length")
+
+// let lengthy = document.getElementsByClassName("Dragon").length
+// document.write(lengthy) ;
+// console.log(lengthy) ;
+
+
+// // using loop - it gives all values where we use "Dragon"
+
+lengthy = document.getElementsByClassName("Dragon") ;
+let leng = lengthy.length
+for (let i = 0; i < leng; i++) {
+    const element =document.getElementsByClassName("Dragon")[i];
+    document.write(element + "<br>" ) ;
+console.log(element) ;
+}
+
+// Query Selector : this method returns the Ist element match of the specified selector , or group of selector. if no matches are found , null is returned
+
+// Element Selector
+let query = document.querySelector("p")
+document.write(query) ;
+console.log(query) ;
+
+query = document.querySelector("span")
+document.write(query) ;
+console.log(query) ;
+
+// ID Selector (Use " # ")
+ query = document.querySelector("#show1")
+document.write(query) ;
+console.log(query) ;
+
+// Ist comes Ist gets (Also in Class Selector)
+query = document.querySelector("#geek , #find")
+document.write(query) ;
+console.log(query) ;
+
+// Class Selector (Use " . ")
+query = document.querySelector(".myClass")
+document.write(query) ;
+console.log(query) ;
+
+query = document.querySelector(".Dragon")
+document.write(query) ;
+console.log(query) ;
+
+
   </script> 
 </body>
 </html>
