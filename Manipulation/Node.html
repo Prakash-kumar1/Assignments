@@ -14,79 +14,85 @@
     <script>
     //     // Document
 
-    //     document.write("-------> Document <------ <br><br>") ;
-    //     document.write(document.nodeName + "<br>") ;
-    //     document.write(document.nodeValue + "<br>") ;
-    //     document.write(document.nodeType + "<br>") ;
-    //     console.log(document.nodeName) ;
-    //     console.log(document.nodeValue) ;
-    //     console.log(document.nodeType) ;
+        document.write("-------> Document <------ <br><br>") ;
+        document.write(document.nodeName + "<br>") ;
+        document.write(document.nodeValue + "<br>") ;
+        document.write(document.nodeType + "<br>") ;
+        console.log(document.nodeName) ;
+        console.log(document.nodeValue) ;
+        console.log(document.nodeType) ;
 
-    //      // Element
+         // Element
 
-    //      document.write("<br><br> -------> Element <------ <br><br>") ;
-    //      let Elem = document.getElementById("myId") ;
-    //     document.write(Elem.nodeName + "<br>") ;
-    //     document.write(Elem.nodeValue + "<br>") ;
-    //     document.write(Elem.nodeType + "<br>") ;
-    //     console.log(Elem.nodeName) ;
-    //     console.log(Elem.nodeValue) ;
-    //     console.log(Elem.nodeType) ;
+         document.write("<br><br> -------> Element <------ <br><br>") ;
+         let Elem = document.getElementById("myId") ;
+        document.write(Elem.nodeName + "<br>") ;
+        document.write(Elem.nodeValue + "<br>") ;
+        document.write(Elem.nodeType + "<br>") ;
+        console.log(Elem.nodeName) ;
+        console.log(Elem.nodeValue) ;
+        console.log(Elem.nodeType) ;
 
-    // // Txt
+    // Txt
 
-    // document.write("<br><br> -------> Text <------ <br><br>") ;
-    //      let Txt = document.getElementById("myId") ;
-    //     document.write(Txt.firstChild.nodeName + "<br>") ;
-    //     document.write(Txt.firstChild.nodeValue + "<br>") ;
-    //     document.write(Txt.firstChild.nodeType + "<br>") ;
-    //     console.log(Txt.firstChild.nodeName) ;
-    //     console.log(Txt.firstChild.nodeValue) ;
-    //     console.log(Txt.firstChild.nodeType) ;
+    document.write("<br><br> -------> Text <------ <br><br>") ;
+         let Txt = document.getElementById("myId") ;
+        document.write(Txt.firstChild.nodeName + "<br>") ;
+        document.write(Txt.firstChild.nodeValue + "<br>") ;
+        document.write(Txt.firstChild.nodeType + "<br>") ;
+        console.log(Txt.firstChild.nodeName) ;
+        console.log(Txt.firstChild.nodeValue) ;
+        console.log(Txt.firstChild.nodeType) ;
 
-    // // For accessing Comment
+    // For accessing Comment
 
-    //  // Comment
+     // Comment
 
-    //  document.write("<br><br> -------> Comment <------ <br><br>") ;
-    //      Txt = document.getElementById("myId") ;
-    //     document.write(Txt.firstChild.nextSibling.nodeName + "<br>") ;
-    //     document.write(Txt.firstChild.nextSibling.nodeValue + "<br>") ;
-    //     document.write(Txt.firstChild.nextSibling.nodeType + "<br>") ;
-    //     console.log(Txt.firstChild.nextSibling.nodeName) ;
-    //     console.log(Txt.firstChild.nextSibling.nodeValue) ;
-    //     console.log(Txt.firstChild.nextSibling.nodeType) ;
+     document.write("<br><br> -------> Comment <------ <br><br>") ;
+         Txt = document.getElementById("myId") ;
+        document.write(Txt.firstChild.nextSibling.nodeName + "<br>") ;
+        document.write(Txt.firstChild.nextSibling.nodeValue + "<br>") ;
+        document.write(Txt.firstChild.nextSibling.nodeType + "<br>") ;
+        console.log(Txt.firstChild.nextSibling.nodeName) ;
+        console.log(Txt.firstChild.nextSibling.nodeValue) ;
+        console.log(Txt.firstChild.nextSibling.nodeType) ;
 
-    // // Accessing and Changing Text
+    // Accessing and Changing Text
 
-    // document.write("<br><br> ------->Changing Text <------ <br><br>") ;
-    //      let text = document.getElementById("myid1").firstChild.nodeValue = "I am changing this Paragraph."  ;
-    //     document.write(text) ;
-    //     console.log(text) ;
+    document.write("<br><br> ------->Changing Text <------ <br><br>") ;
+         let text = document.getElementById("myid1").firstChild.nodeValue = "I am changing this Paragraph."  ;
+        document.write(text) ;
+        console.log(text) ;
+
 
     // Attribute properties of Object :-  name  &   value
 
     let result = document.getElementById("myId") ;
-    let getAttr = result.attributes[0].nodeName ;
+    let getAttr = result.attributes[0].name ;
     document.write(getAttr) ;
         console.log(getAttr) ;
 
-        result = document.getElementById("myid1") ;
-     getAttr = result.attributes[0].nodeValue ;
+        result = document.getElementById("myId") ;
+    getAttr = result.attributes[1].value ;
     document.write(getAttr) ;
         console.log(getAttr) ;
 
-        //   or we can write this way
 
-    result = document.getElementById("myId") ;
-    document.write(result.attributes[0].nodeName + " * ")
-    document.write(result.attributes[0].nodeValue + " <br>")
-    document.write(result.attributes[1].nodeName + " * ")
-    document.write(result.attributes[1].nodeValue)
-    console.log(result.attributes[0].nodeName + " * ")
-   console.log(result.attributes[0].nodeValue + " <br>")
-    console.log(result.attributes[1].nodeName + " * ")
-    console.log(result.attributes[1].nodeValue)
+    // OR we can also write this way
+
+    const res = document.getElementById("myId") ;
+    document.write(result.attributes[0].name + " * ")
+    document.write(result.attributes[0].value + "<br>")
+    document.write(result.attributes[1].name + " * ")
+    document.write(result.attributes[1].value + "<br>")
+   console.log(result.attributes[0].name + " * ")
+   console.log(result.attributes[0].value + "<br>")
+   console.log(result.attributes[1].name + " * ")
+   console.log(result.attributes[1].value + "<br>")
+
+//    finding length
+ console.log(result.attributes.length)
+
 
 
     </script>
