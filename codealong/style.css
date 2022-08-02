@@ -1,0 +1,44 @@
+#table th{
+    font-weight: bold;
+    text-align: center;
+}
+#table td{
+  width: 150px;
+  height: 80px;
+  white-space: nowrap;
+  text-align: center;
+  /* vertical-align: bottom; */
+  padding-top: 5px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+#table .E{
+    background-color: aqua;
+}
+#table .SE{
+    background-color: purple;
+}
+#table .S{
+    background-color: peru;
+}
+#table .SW{
+    background-color: rgb(11, 139, 11);
+}
+#table .W{
+    background-color: greenyellow;
+}
+#table .NW{
+    background-color: rgb(172, 29, 29);
+}
+#table .N{
+    background-color: orange;
+}
+#table .NE{
+    background-color: blueviolet;
+}
+#table .C{
+    background-color: red;
+}
