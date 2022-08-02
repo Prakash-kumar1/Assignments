@@ -10,8 +10,8 @@
   <h1 id="show" class="Dragon myClass">We are Learning  Javascript</h1>
   <h2>Subscribe geeky shows</h2>
   <h3>Right Now</h3>
-  <p id="geek" class="Dragon">Hello <span>geeky shows</span><em>world</em><span>Youtube</span></p>
-
+  <p id="geek" class="Dragon">Hello <span class="mySpan">geeky shows</span><em>world</em><span class="mySpan">Youtube</span></p>
+ <span class="mySpan"> welcome Span</span>
 
   <p id="find" class="myClass">Bye ! Geeky shows <span>Subscribe</span></p> 
   <div id="access">
@@ -22,6 +22,7 @@
   </div>
   <p id="show2">I am The Fifth paragraph</p>
   <div id="show3">I am Somethingh or Anythingh Div</div>
+  <div>Hello Programmer , My name is Div </div>
   <script>
 
 //     // Accesing element by ID Name
@@ -166,17 +167,45 @@
 
 // // Query Selector All : 
 
-let All = document.querySelectorAll("p") ;
-document.write(All) ;
-console.log(All) ;
+// let All = document.querySelectorAll("p") ;
+// document.write(All) ;
+// console.log(All) ;
 
-// Printing multiple selector : it give index value like array
+// // Printing multiple selector : it give index value like array
 
-All = document.querySelectorAll("h1 , #show2 , .myClass") ;
-document.write(All) ;
-console.log(All) ;
+// All = document.querySelectorAll("h1 , #show2 , .myClass") ;
+// document.write(All) ;
+// console.log(All) ;
 
-// Like QuerySelector it also have ID selector , Class selector. (do it on your own)
-  </script> 
+// // Like QuerySelector it also have ID selector , Class selector. (do it on your own)
+
+// // Attribute Selector
+
+// All = document.querySelectorAll("div[id]") ;
+// document.write(All) ;
+// console.log(All) ;
+
+// // Specificaly for a ID 
+// All = document.querySelectorAll("div[id = 'show3']") ;
+// document.write(All) ;
+// console.log(All) ;
+
+// // More Specific 
+
+// let more = document.getElementById("geek") ;
+// let spec = more.querySelectorAll("span.mySpan") ;
+// document.write(spec) ;
+// console.log(spec) ;
+
+// //  Merging them like above
+// const resul = document.getElementById("geek").querySelectorAll("span.mySpan") ;
+// document.write(resul) ;
+// console.log(resul) ;
+
+// // Another method (Don't Understand)
+// const Search = document.querySelectorAll("#geek > .Dragon > span.mySpan")
+// document.write(Search) ;
+// console.log(Search) ;
+</script> 
 </body>
 </html>
