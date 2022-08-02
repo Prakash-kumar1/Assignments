@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM assignment by Govind verma</title>
+    <link rel="stylesheet" href="dom2.css">
+</head>
+<body>
+    
+<!-- <form action="">
+    <input type="text" name="fname" id="fname" class="fd" placeholder="Full Name">
+    <input type="text" name="email" id="email" class="fd" placeholder="Email ">
+    <input type="text" name="phone" id="phone" class="fd" placeholder="Phone number">
+    <input type="submit" id="btn" name="btn" value="Add" onclick="AddRow()">
+</form> -->
+<center><h1>DOM IInd Assignment</h1></center>
+
+
+<center>
+    <table id="one">
+            <td><input type="text" name="fname" id="fname" placeholder="Full name"></td>
+        
+            <td><input type="Email" name="email" id="email"placeholder='Email'></td>
+   
+            <td><input type="text" name="phone" id="phone" placeholder="Phone number"></td>
+       
+            <td colspan="2"><input type="submit" name="button" id="button" value="Add" onclick="AddRow()"></td>
+            <!-- <td colspan="2"><input type="submit" name="remove" id="remove" value="Removed" onclick="removed()"></td> -->
+      
+    </table>
+</center>
+
+<center>
+<table id="show">
+    <tr id="main-row">
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone number</th>
+        <th id="remove2">Action</th>
+      
+
+    </tr>
+</table>
+</center>
+
+<script>
+    var list1=[];
+    var list2=[];
+    var list3=[];
+    var list4=[];
+    // var list4=[];
+    let n=1;
+    let x=0;
+
+    function AddRow(){
+ var addRow=document.getElementById("show")
+ var newRow=addRow.insertRow(n);
+ 
+ list1[x]=document.getElementById("fname").value;
+ list2[x]=document.getElementById("email").value;
+ list3[x]=document.getElementById("phone").value;
+ 
+ var cell1=newRow.insertCell(0)
+ var cell2=newRow.insertCell(1)
+ var cell3=newRow.insertCell(2)
+ var cell4=newRow.insertCell(3)
+//  var cell3=newRow.insertCell(3)
+
+ cell1.innerHTML=list1[x];
+ cell2.innerHTML=list2[x];
+ cell3.innerHTML=list3[x];
+ cell4.innerHTML= '<input type="submit" name="remove" id="remove" value="Remove" onclick="removed()">';
+//  cell4.innerHTML= '<button onclick="removed()" id="remove" value="remove">remove</button>';
+
+
+ n++
+ x++
+
+    }
+    let buttons=document.getElementById("remove");
+    // //     let div=document.getElementById("one");
+        buttons.addEventListener("click",removed);
+
+        function removed(){
+
+            document.getElementById("show").deleteRow(1)
+        }
+</script>
+</body>
+</html>
