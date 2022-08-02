@@ -20,149 +20,163 @@
     <p class="myClass">Third paragraph inside div tag</p>
     <p id="show1">I am 4th paragraph</p>
   </div>
+  <p id="show2">I am The Fifth paragraph</p>
+  <div id="show3">I am Somethingh or Anythingh Div</div>
   <script>
 
-    // Accesing element by ID Name
+//     // Accesing element by ID Name
 
-    let result =  document.getElementById("geek")
-    document.write(result)
-    console.log(result)
+//     let result =  document.getElementById("geek")
+//     document.write(result)
+//     console.log(result)
 
-     result =  document.getElementById("show") ;
-    document.write(result) ;
-    console.log(result) ;
+//      result =  document.getElementById("show") ;
+//     document.write(result) ;
+//     console.log(result) ;
 
-    // Accesing element by Tag Name
-    let Tags = document.getElementsByTagName("p")
-    document.write(Tags) ;
-    console.log(Tags) ;
+//     // Accesing element by Tag Name
+//     let Tags = document.getElementsByTagName("p")
+//     document.write(Tags) ;
+//     console.log(Tags) ;
 
-    Tags = document.getElementsByTagName("*")
-    document.write(Tags) ;
-    console.log(Tags) ;
+//     Tags = document.getElementsByTagName("*")
+//     document.write(Tags) ;
+//     console.log(Tags) ;
 
-    Tags = document.body.getElementsByTagName("*")
-    document.write(Tags) ;
-    console.log(Tags) ;
+//     Tags = document.body.getElementsByTagName("*")
+//     document.write(Tags) ;
+//     console.log(Tags) ;
 
-    // // It will gives  error
-    // Tags = document.body.div.getElementsByTagName("*")
-    // document.write(Tags) ;
-    // console.log(Tags) ;
+//     // // It will gives  error
+//     // Tags = document.body.div.getElementsByTagName("*")
+//     // document.write(Tags) ;
+//     // console.log(Tags) ;
 
-//   Acessing  Span  tag   specificaly  from  id  =  "geek"
+// //   Acessing  Span  tag   specificaly  from  id  =  "geek"
 
-let specificTags = document.getElementById("geek") ;
-let getSpan = specificTags.getElementsByTagName("span") ;
-document.write(getSpan) ;
-    console.log(getSpan) ;
+// let specificTags = document.getElementById("geek") ;
+// let getSpan = specificTags.getElementsByTagName("span") ;
+// document.write(getSpan) ;
+//     console.log(getSpan) ;
 
-    // OR we can also write this way -  through Merging  both  (in id = "find")
+//     // OR we can also write this way -  through Merging  both  (in id = "find")
 
-let Specific = document.getElementById("find").getElementsByTagName("span") ;
-document.write(Specific) ;
-    console.log(Specific) ;
+// let Specific = document.getElementById("find").getElementsByTagName("span") ;
+// document.write(Specific) ;
+//     console.log(Specific) ;
 
-//     // Finding Length 
+// //     // Finding Length 
 
-// let data = document.getElementsByTagName("p") ;
-// let len = data.length
-// document.write(len + "<br>" ) ;
-// console.log(len) ;
-// document.write(data) ;
-// console.log(data) ;
+// // let data = document.getElementsByTagName("p") ;
+// // let len = data.length
+// // document.write(len + "<br>" ) ;
+// // console.log(len) ;
+// // document.write(data) ;
+// // console.log(data) ;
 
-// //  Using  Loop
+// // //  Using  Loop
 
-len = document.getElementsByTagName("p").length ;
-for (let i = 0; i < len; i++) {
-    const element =document.getElementsByTagName("p")[i];
-    document.write(element + "<br>" ) ;
-console.log(element) ;
-}
+// len = document.getElementsByTagName("p").length ;
+// for (let i = 0; i < len; i++) {
+//     const element =document.getElementsByTagName("p")[i];
+//     document.write(element + "<br>" ) ;
+// console.log(element) ;
+// }
 
-// Accesing element by Class Name
+// // Accesing element by Class Name
 
-let res = document.getElementsByClassName("Dragon")
-document.write(res) ;
-console.log(res) ;
+// let res = document.getElementsByClassName("Dragon")
+// document.write(res) ;
+// console.log(res) ;
 
-// Accesing  Class Name only in body
+// // Accesing  Class Name only in body
 
-res = document.body.getElementsByClassName("Dragon")
-document.write(res) ;
-console.log(res) ;
+// res = document.body.getElementsByClassName("Dragon")
+// document.write(res) ;
+// console.log(res) ;
 
-// Accesing  Double Class Name 
+// // Accesing  Double Class Name 
 
-res = document.body.getElementsByClassName("Dragon myClass")
-document.write(res) ;
-console.log(res) ;
+// res = document.body.getElementsByClassName("Dragon myClass")
+// document.write(res) ;
+// console.log(res) ;
 
-// Accessing  class name
-res = document.body.getElementsByClassName("myClass")
-document.write(res) ;
-console.log(res) ;
+// // Accessing  class name
+// res = document.body.getElementsByClassName("myClass")
+// document.write(res) ;
+// console.log(res) ;
 
-// Accessing  class name through div
+// // Accessing  class name through div
 
-res = document.getElementById("access").getElementsByClassName("Dragon") ;
-document.write(res) ;
-console.log(res) ;
+// res = document.getElementById("access").getElementsByClassName("Dragon") ;
+// document.write(res) ;
+// console.log(res) ;
 
-res = document.getElementById("access").getElementsByClassName("myClass") ;
-document.write(res) ;
-console.log(res) ;
-
-
-// // Finding Length in Class name("similarly ID Length")
-
-// let lengthy = document.getElementsByClassName("Dragon").length
-// document.write(lengthy) ;
-// console.log(lengthy) ;
+// res = document.getElementById("access").getElementsByClassName("myClass") ;
+// document.write(res) ;
+// console.log(res) ;
 
 
-// // using loop - it gives all values where we use "Dragon"
+// // // Finding Length in Class name("similarly ID Length")
 
-lengthy = document.getElementsByClassName("Dragon") ;
-let leng = lengthy.length
-for (let i = 0; i < leng; i++) {
-    const element =document.getElementsByClassName("Dragon")[i];
-    document.write(element + "<br>" ) ;
-console.log(element) ;
-}
-
-// Query Selector : this method returns the Ist element match of the specified selector , or group of selector. if no matches are found , null is returned
-
-// Element Selector
-let query = document.querySelector("p")
-document.write(query) ;
-console.log(query) ;
-
-query = document.querySelector("span")
-document.write(query) ;
-console.log(query) ;
-
-// ID Selector (Use " # ")
- query = document.querySelector("#show1")
-document.write(query) ;
-console.log(query) ;
-
-// Ist comes Ist gets (Also in Class Selector)
-query = document.querySelector("#geek , #find")
-document.write(query) ;
-console.log(query) ;
-
-// Class Selector (Use " . ")
-query = document.querySelector(".myClass")
-document.write(query) ;
-console.log(query) ;
-
-query = document.querySelector(".Dragon")
-document.write(query) ;
-console.log(query) ;
+// // let lengthy = document.getElementsByClassName("Dragon").length
+// // document.write(lengthy) ;
+// // console.log(lengthy) ;
 
 
+// // // using loop - it gives all values where we use "Dragon"
+
+// lengthy = document.getElementsByClassName("Dragon") ;
+// let leng = lengthy.length
+// for (let i = 0; i < leng; i++) {
+//     const element =document.getElementsByClassName("Dragon")[i];
+//     document.write(element + "<br>" ) ;
+// console.log(element) ;
+// }
+
+// // Query Selector : this method returns the Ist element match of the specified selector , or group of selector. if no matches are found , null is returned
+
+// // Element Selector
+// let query = document.querySelector("p")
+// document.write(query) ;
+// console.log(query) ;
+
+// query = document.querySelector("span")
+// document.write(query) ;
+// console.log(query) ;
+
+// // ID Selector (Use " # ")
+//  query = document.querySelector("#show1")
+// document.write(query) ;
+// console.log(query) ;
+
+// // Ist comes Ist gets (Also in Class Selector)
+// query = document.querySelector("#geek , #find")
+// document.write(query) ;
+// console.log(query) ;
+
+// // Class Selector (Use " . ")
+// query = document.querySelector(".myClass")
+// document.write(query) ;
+// console.log(query) ;
+
+// query = document.querySelector(".Dragon")
+// document.write(query) ;
+// console.log(query) ;
+
+// // Query Selector All : 
+
+let All = document.querySelectorAll("p") ;
+document.write(All) ;
+console.log(All) ;
+
+// Printing multiple selector : it give index value like array
+
+All = document.querySelectorAll("h1 , #show2 , .myClass") ;
+document.write(All) ;
+console.log(All) ;
+
+// Like QuerySelector it also have ID selector , Class selector. (do it on your own)
   </script> 
 </body>
 </html>
