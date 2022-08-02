@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myId">We are reading About node properties.  <!-- This is a comment --> </h1>
+   
+    <p id="myid1">I am first paragraph</p>
+
+    <script>
+        // Document
+
+        document.write("-------> Document <------ <br><br>") ;
+        document.write(document.nodeName + "<br>") ;
+        document.write(document.nodeValue + "<br>") ;
+        document.write(document.nodeType + "<br>") ;
+        console.log(document.nodeName) ;
+        console.log(document.nodeValue) ;
+        console.log(document.nodeType) ;
+
+         // Element
+
+         document.write("<br><br> -------> Element <------ <br><br>") ;
+         let Elem = document.getElementById("myId") ;
+        document.write(Elem.nodeName + "<br>") ;
+        document.write(Elem.nodeValue + "<br>") ;
+        document.write(Elem.nodeType + "<br>") ;
+        console.log(Elem.nodeName) ;
+        console.log(Elem.nodeValue) ;
+        console.log(Elem.nodeType) ;
+
+    // Txt
+
+    document.write("<br><br> -------> Text <------ <br><br>") ;
+         let Txt = document.getElementById("myId") ;
+        document.write(Txt.firstChild.nodeName + "<br>") ;
+        document.write(Txt.firstChild.nodeValue + "<br>") ;
+        document.write(Txt.firstChild.nodeType + "<br>") ;
+        console.log(Txt.firstChild.nodeName) ;
+        console.log(Txt.firstChild.nodeValue) ;
+        console.log(Txt.firstChild.nodeType) ;
+
+    // For accessing Comment
+
+     // Comment
+
+     document.write("<br><br> -------> Comment <------ <br><br>") ;
+         Txt = document.getElementById("myId") ;
+        document.write(Txt.firstChild.nextSibling.nodeName + "<br>") ;
+        document.write(Txt.firstChild.nextSibling.nodeValue + "<br>") ;
+        document.write(Txt.firstChild.nextSibling.nodeType + "<br>") ;
+        console.log(Txt.firstChild.nextSibling.nodeName) ;
+        console.log(Txt.firstChild.nextSibling.nodeValue) ;
+        console.log(Txt.firstChild.nextSibling.nodeType) ;
+
+    // Accessing and Changing Text
+
+    document.write("<br><br> ------->Changing Text <------ <br><br>") ;
+         let text = document.getElementById("myid1").firstChild.nodeValue = "I am changing this Paragraph."  ;
+        document.write(text) ;
+        console.log(text) ;
+
+    </script>
+</body>
+</html>
