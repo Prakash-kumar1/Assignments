@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM assignment by Govind verma</title>
+    <title>DOM IInd assignment by Prakash Kumar</title>
     <link rel="stylesheet" href="dom2.css">
 </head>
 <body>
@@ -20,7 +20,6 @@
             <td><input type="text" name="phone" id="phone" placeholder="Phone number"></td>
        
             <td colspan="2"><input type="submit" name="button" id="button" value="Add" onclick="AddRow()"></td>
-            <!-- <td colspan="2"><input type="submit" name="remove" id="remove" value="Removed" onclick="removed()"></td> -->
       
     </table>
 </center>
@@ -54,17 +53,15 @@
  list2[x]=document.getElementById("email").value;
  list3[x]=document.getElementById("phone").value;
  
- var cell1=newRow.insertCell(0)
- var cell2=newRow.insertCell(1)
- var cell3=newRow.insertCell(2)
- var cell4=newRow.insertCell(3)
-//  var cell3=newRow.insertCell(3)
+ var cell1=newRow.insertCell(0) ;
+ var cell2=newRow.insertCell(1) ;
+ var cell3=newRow.insertCell(2) ;
+ var cell4=newRow.insertCell(3) ;
 
  cell1.innerHTML=list1[x];
  cell2.innerHTML=list2[x];
  cell3.innerHTML=list3[x];
  cell4.innerHTML= '<input type="submit" name="remove" id="remove" value="Remove" onclick="removed()">';
-//  cell4.innerHTML= '<button onclick="removed()" id="remove" value="remove">remove</button>';
 
 
  n++
@@ -72,7 +69,6 @@
 
     }
     let buttons=document.getElementById("remove");
-    // //     let div=document.getElementById("one");
         buttons.addEventListener("click",removed);
 
         function removed(){
