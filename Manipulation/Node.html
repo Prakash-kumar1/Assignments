@@ -124,10 +124,18 @@ console.log(Child.Children);    // it returns Undefined
 
 
 Child = document.getElementById("myid2") ;
-console.log(Child.childNodes) ;        // it returns all Everything in body
+console.log(Child.childNodes) ;        // it returns text , span
 console.log(Child.Children);    // it returns Undefined
 
 
+// Finding Length
+
+let Length = document.getElementById("myId") ;
+let Len =(Length.childNodes.length) ;        // it returns all Length
+console.log(Len); 
+
+// Printing Child Nodes which are Present
+console.log(Length.childNodes) ;        
 
 
 
