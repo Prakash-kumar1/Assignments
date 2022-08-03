@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1 id="myId" class="myClass">We are reading About node properties.  <!-- This is a comment --> </h1>
+<body id="myID3">
+    <h1 id="myId" class="myClass"> <!-- This Is Comment --> We are reading About node properties.  <!-- This is a comment --> </h1>
    
     <p id="myid1">I am first paragraph</p>
+    <p id="myid2"> <span>I am Span</span> I am SECOND paragraph</p>
 
     <script>
     //     // Document
@@ -108,13 +109,23 @@ console.log(parent.parentNode) ;        // it returns Body
 console.log(parent.parentElement);    // it returns Body
 
 
+// Child Nodes : - it returns live NodeList of child nodes of given element, includes Whitespaces , Text and Comment nodes
+// Children : - it returns collection of child elements ,it includes only Element node (no whitespace, Text and Comment nodes)
 
 
+let Child = document.getElementById("myId") ;
+console.log(Child.childNodes) ;        // it returns all text , comment , Whitespaces
+console.log(Child.Children);    // it returns Undefined because it ignores Text , Comment node
 
 
+Child = document.getElementById("myID3") ;
+console.log(Child.childNodes) ;        // it returns all Everything in body
+console.log(Child.Children);    // it returns Undefined
 
 
-
+Child = document.getElementById("myid2") ;
+console.log(Child.childNodes) ;        // it returns all Everything in body
+console.log(Child.Children);    // it returns Undefined
 
 
 
