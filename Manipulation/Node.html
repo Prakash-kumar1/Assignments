@@ -11,7 +11,7 @@
    
     <p id="myid1">I am first paragraph</p>
     <p id="myid2"> <span>I am Span</span> I am SECOND paragraph</p>
-
+<p id="Ist" >I am First Child</p>
     <script>
     //     // Document
 
@@ -134,23 +134,48 @@ let Length = document.getElementById("myId") ;
 let Len =(Length.childNodes.length) ;        // it returns all Length
 console.log(Len); 
 
-// Printing Child Nodes which are Present
+// Printing Child Nodes which are Present , // We can also use For loop like Previously we Used
 console.log(Length.childNodes) ;        
 
 
+// firstChild Property : 
+let Chil = document.getElementById("Ist")
+console.log(Chil.firstChild) ;
+
+let Chi = document.getElementById("myid2")
+console.log(Chi.firstChild) ;
 
 
+// firstElementChild Property : It ignores Text , Comment
+Chil = document.getElementById("Ist")
+console.log(Chil.firstElementChild) ;
+
+Chi = document.getElementById("myid2")
+console.log(Chi.firstElementChild) ;
 
 
+//  Accessing and changing Text 
+
+let change = document.getElementById("myid2");
+change.firstElementChild.textContent = "Changing IInd Paragraph and Learning DOM"
 
 
+// lastChild Property : 
+let Chl = document.getElementById("Ist")
+console.log(Chl.lastChild) ;
+
+let Ci = document.getElementById("myid2")
+console.log(Ci.lastChild) ;
 
 
+// lastChild Property : 
+ Chl = document.getElementById("Ist")
+console.log(Chl.lastElementChild) ;
 
+ Ci = document.getElementById("myid2")
+console.log(Ci.lastElementChild) ;
 
-
-
-
+// We can also Accessing and changing Text Like firstChild and firstElementChild property
 
 
 
