@@ -1,0 +1,71 @@
+
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  background-color: aliceblue;
+}
+
+#suggest{
+    padding: 10px;
+    border-radius: 10px;
+   
+
+}
+#btn:hover{
+background-color: rgb(76, 0, 76) ;
+color: aliceblue;
+
+}
+.div1 , #contain{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: center; */
+    align-items: center;
+}
+#contain, #complete, .div1{
+    box-sizing: border-box;
+    width: 500px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    box-shadow: 5px 10px 10px;
+    padding: 20px;
+    border-radius: 30px;
+    color: rgb(4, 0, 80);
+    background-color: rgb(202, 202, 202);
+}
+
+#btn{
+    background-color: aquamarine;
+    margin-left: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 2px 1px 3px ;
+}
+.editing, .deleting{
+    margin-left: 20px;
+
+}
+.editing{
+    background-color: rgb(137, 255, 206);
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 2px 1px 3px ;
+}
+.deleting{
+    background-color: rgb(255, 111, 111);
+    padding: 5px;
+    border-radius: 10px;
+    width: 100px;
+    box-shadow: 2px 1px 3px ;
+}
+
+.editing :hover{
+   background-color: blueviolet;
+}
